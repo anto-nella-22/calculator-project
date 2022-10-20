@@ -21,3 +21,14 @@ const divide = function (array) {
         (accumulator, currentValue) => accumulator / currentValue
     );
 };
+
+const operate = function (operator, array) {
+
+    const operators = {
+        "+": sum(array),
+        "-": subtract(array),
+        "*": multiply(array),
+        "/": divide(array)
+    };
+    return Object.values(operators).find(value => operators[operator] === value);
+}
