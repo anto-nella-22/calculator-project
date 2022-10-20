@@ -32,3 +32,21 @@ const operate = function (operator, array) {
     };
     return Object.values(operators).find(value => operators[operator] === value);
 }
+
+//Dsiplay numbers by clicking number btns
+let displayValue;
+let displayArea = document.querySelector('.display');
+
+const digitBtn = document.querySelectorAll('#num');
+ digitBtn.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+        const numTarget = e.target.value;
+        displayValue = numTarget;
+        display();
+    });
+});
+
+function display (number) {
+    number = displayValue;
+    displayArea.textContent += displayValue;
+}
