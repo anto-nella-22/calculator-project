@@ -3,32 +3,53 @@
     <head>
         <meta charset = "UTF-8">
         <title>Calculator</title>
-        <link rel = "stylesheet" href="">
+        <link rel = "stylesheet" href="style.css">
     </head>
     <body>
+    <div class="calc-container">
+    <div class="container">
         <div id = "display">
             <div class = "display"></div>
         </div>
-        <div class = "digits">
-            <button id = "num" value = "0">0</button>
-            <button id = "num" value = "1">1</button>
-            <button id = "num" value = "2">2</button>
-            <button id = "num" value = "3">3</button>
-            <button id = "num" value = "4">4</button>
-            <button id = "num" value = "5">5</button>
-            <button id = "num" value = "6">6</button>
-            <button id = "num" value = "7">7</button>
-            <button id = "num" value = "8">8</button>
-            <button id = "num" value = "9">9</button>
+        <div class="new-section">
+            <div class="section">
+                <div class="clear-delete">
+                    <button class = "clear">AC</button>
+                    <button class = "delete">C</button>
+                </div>
+                <div class = "digits">
+                    <div class = "row-1">
+                        <button id = "num" value = "7">7</button>
+                        <button id = "num" value = "8">8</button>
+                        <button id = "num" value = "9">9</button>
+                    </div>
+                    <div class = "row-2">
+                        <button id = "num" value = "4">4</button>
+                        <button id = "num" value = "5">5</button>
+                        <button id = "num" value = "6">6</button>
+                    </div>
+                    <div class = "row-3">
+                        <button id = "num" value = "1">1</button>
+                        <button id = "num" value = "2">2</button>
+                        <button id = "num" value = "3">3</button>
+                    </div>
+                    <div class = "row-4">
+                        <button id = "num" value = "0">0</button>
+                        <button class = "decimal" value = ".">.</button>
+                        <button id = "operation" value = "=" class = "equals">=</button>
+                    </div>
+                </div>
+            </div>
+            <div class = "math-functions">
+                <button id = "operation" value = "/" class = "divide">/</button>
+                <button id = "operation" value = "*" class = "multiply">x</button>
+                <button id = "operation" value = "-" class = "subtract">-</button>
+                <button id = "operation" value = "+" class = "sum">+</button>
+            </div>
         </div>
-        <div class = "math-functions">
-            <button class = "sum">+</button>
-            <button class = "subtract">-</button>
-            <button class = "multiply">x</button>
-            <button class = "divide">/</button>
-            <button class = "equals">=</button>
-        </div>
-        <button class = "clear">AC</div>
-        <script src = "myscript.js"></script>
+
+    </div>
+    </div>
+    <script src = "myscript.js"></script>
     </body>
 </html>

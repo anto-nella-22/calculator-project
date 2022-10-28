@@ -1,0 +1,98 @@
+.calc-container {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 95vh;
+}
+
+.container {
+    border: solid 5px #597B6D;
+    border-radius: 10px;
+    height: 600px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #87BB4F;
+}
+
+.display {
+    margin-bottom: 30px;
+    padding: 10px;
+    border: solid 5px black;
+    border-radius: 8px;
+    height: 100px;
+    width: 260px;
+    background-color: #ABB3A8;
+    font-size: 80px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.new-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    font-size: 50px;
+    border-style: hidden;
+    border-radius: 8px;
+}
+
+.sum {
+    height: 144px;
+}
+
+.digits {
+    padding: 5px;
+    height: auto;
+    width: 210px;
+    border: hidden 2px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.row-1, .row-2, .row-3, .row-4 {
+    margin: 5px;
+    display: flex;
+    column-gap: 10px;
+}
+
+.math-functions {
+    border: hidden 2px;
+    row-gap: 10px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#operation {
+    background-color: #4677A8;
+    color: white;
+}
+
+.clear, .delete {
+    width: 120px;
+    border: #4677A8 solid 3px;
+    color: #4677A8;
+}
+
+.clear-delete {
+    border: hidden 2px ;
+    width: 200px;
+    column-gap: 10px;
+    padding: 10px;
+    display: flex;
+    align-self: flex-start;
+}
