@@ -19,7 +19,7 @@
     background-color: #87BB4F;
 }
 
-.display {
+#display {
     margin-bottom: 30px;
     padding: 10px;
     border: solid 5px black;
@@ -27,9 +27,16 @@
     height: 100px;
     width: 260px;
     background-color: #ABB3A8;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;}
+
+.display {
     font-size: 80px;
     text-align: right;
     vertical-align: middle;
+    font-family: 'Courier New', Courier, monospace;
+    font-variant-numeric: slashed-zero;
 }
 
 .new-section {
